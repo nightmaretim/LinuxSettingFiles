@@ -45,15 +45,18 @@ setopt share_history        # share command history data
 #
 export LANG=ja_JP.UTF-8
 
-##########################fromナレッジエース
-# プロンプトの設定
+##########################vi風bind
+bindkey -v 
+
+##########################プロンプトの設定
+#fromナレッジエース
 autoload colors
 colors
 PROMPT="%{${fg[blue]}%}[%n@%m] %(!.#.$) %{${reset_color}%}"
 PROMPT2="%{${fg[blue]}%}%_> %{${reset_color}%}"
 SPROMPT="%{${fg[red]}%}correct: %R -> %r [nyae]? %{${reset_color}%}"
 RPROMPT="%{${fg[blue]}%}[%~]%{${reset_color}%}"
-##########################from 漢###########################
+#from 漢
 ## Default shell configuration
 ##
 ## set prompt
