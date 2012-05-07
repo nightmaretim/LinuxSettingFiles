@@ -6,8 +6,9 @@
 
 autoload -U compinit
 compinit
-autoload predict-on
-predict-on
+#autoload predict-on
+#predict-on
+zstyle ':completion:*' list-colors ''
 
 #allow tab completion in the middle of a word
 setopt COMPLETE_IN_WORD
