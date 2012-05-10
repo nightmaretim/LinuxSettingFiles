@@ -1,6 +1,5 @@
 " recase' を上書きする。（有効:smartcase/無効:nosmartcase）
 :set smartcase
-
 " ファイル内の <Tab> が対応する空白の数。
 " <Tab> の挿入や <BS> の使用等の編集操作をするときに、<Tab>が対応する空白の数。
 :set softtabstop=4
@@ -28,16 +27,23 @@
 :set list
 " Listモード (訳注: オプション 'list' がオンのとき)に使われる文字を設定する。
 :set listchars=tab:>-,extends:<,trail:-,eol:<
-
 " 最下ウィンドウにいつステータス行が表示されるかを設定する。
 "               0: 全く表示しない
 "               1: ウィンドウの数が2以上のときのみ表示
-" 2: 常に表示
+"               2: 常に表示
 :set laststatus=2
 " コマンド (の一部)を画面の最下行に表示する。（有効:showcmd/無効:noshowcmd）
 :set showcmd
-
 "ファイルを上書きする前にバックアップを作る。書き込みが成功してもバックアップはそのまま取っておく。（有効:backup/無効:nobackup）
 :set nobackup
 " ファイルの上書きの前にバックアップを作る。オプション 'backup'がオンでない限り、バックアップは上書きに成功した後削除される。（有効:writebackup/無効:nowritebackup）
 :set writebackup
+"""""""""""""""""""""""""""""""""""""""
+"javacomplete設定
+"Set 'omnifunc' option
+:setlocal omnifunc=javacomplete#Complete
+"Set 'completefunc' option to show parameters information IF YOU LIKE
+:setlocal completefunc=javacomplete#CompleteParamsInfo
+"You can map as follows for better display:
+:inoremap <buffer> <C-X><C-U> <C-X><C-U><C-P>
+:inoremap <buffer> <C-S-Space> <C-X><C-U><C-P>
