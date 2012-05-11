@@ -40,10 +40,14 @@
 :set writebackup
 """""""""""""""""""""""""""""""""""""""
 "javacomplete設定
+"Set 'omnifunc' option. e.g.
+":setlocal omnifunc=javacomplete#Complete
 "Set 'omnifunc' option
-:setlocal omnifunc=javacomplete#Complete
-"Set 'completefunc' option to show parameters information IF YOU LIKE
-:setlocal completefunc=javacomplete#CompleteParamsInfo
+":if has("autocmd")
+":  autocmd Filetype java setlocal omnifunc=javacomplete#Complete
+":endif
+"Set 'completefunc' option to show parameters information IF YOU LIKE. e.g.
+":setlocal completefunc=javacomplete#CompleteParamsInfo
 "You can map as follows for better display:
-:inoremap <buffer> <C-X><C-U> <C-X><C-U><C-P>
-:inoremap <buffer> <C-S-Space> <C-X><C-U><C-P>
+":inoremap <buffer> <C-X><C-U> <C-X><C-U><C-P>
+":inoremap <buffer> <C-S-Space> <C-X><C-U><C-P>
