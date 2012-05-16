@@ -1,3 +1,9 @@
+"背景色を変更する(:syntax enableより前に配置する事)
+":set background=dark
+"カラースキームを変更する。(例は、eveningに変更)
+:colorscheme evening
+"構文強調表示を開始する。
+:syntax enable
 " recase' を上書きする。（有効:smartcase/無効:nosmartcase）
 :set smartcase
 " ファイル内の <Tab> が対応する空白の数。
@@ -38,16 +44,18 @@
 :set nobackup
 " ファイルの上書きの前にバックアップを作る。オプション 'backup'がオンでない限り、バックアップは上書きに成功した後削除される。（有効:writebackup/無効:nowritebackup）
 :set writebackup
+"ファイルタイプの検出　プラグイン　インデントの仕様
+:filetype plugin indent on
 """""""""""""""""""""""""""""""""""""""
 "javacomplete設定
 "Set 'omnifunc' option. e.g.
 ":setlocal omnifunc=javacomplete#Complete
 "Set 'omnifunc' option
-":if has("autocmd")
-":  autocmd Filetype java setlocal omnifunc=javacomplete#Complete
-":endif
+:if has("autocmd")
+:  autocmd Filetype java setlocal omnifunc=javacomplete#Complete
+:endif
 "Set 'completefunc' option to show parameters information IF YOU LIKE. e.g.
-":setlocal completefunc=javacomplete#CompleteParamsInfo
+:setlocal completefunc=javacomplete#CompleteParamsInfo
 "You can map as follows for better display:
-":inoremap <buffer> <C-X><C-U> <C-X><C-U><C-P>
-":inoremap <buffer> <C-S-Space> <C-X><C-U><C-P>
+:inoremap <buffer> <C-X><C-U> <C-X><C-U><C-P>
+:inoremap <buffer> <C-S-Space> <C-X><C-U><C-P>
