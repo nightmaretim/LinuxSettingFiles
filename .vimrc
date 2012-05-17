@@ -1,7 +1,7 @@
 "背景色を変更する(:syntax enableより前に配置する事)
 ":set background=dark
 "カラースキームを変更する。(例は、eveningに変更)
-:colorscheme evening
+":colorscheme evening
 "構文強調表示を開始する。
 :syntax enable
 " recase' を上書きする。（有効:smartcase/無効:nosmartcase）
