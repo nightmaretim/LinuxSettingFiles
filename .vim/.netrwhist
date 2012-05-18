@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/home/buzz/java_sample/sample/util.logger/build'
 let g:netrw_dirhist_2='/home/buzz/groovy_sample/antBuilder'
 let g:netrw_dirhist_3='/home/buzz/gradle_sample/own_sample'
+let g:netrw_dirhist_4='/home/buzz/groovy_sample/ghello'

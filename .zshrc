@@ -3,6 +3,8 @@ JAVA_HOME=/usr/java/latest
 export JAVA_HOME
 MAVEN_HOME=/home/buzz/program/maven
 export MAVEN_HOME
+GROOVY_HOME=/home/buzz/program/groovy
+export GROOVY_HOME
 GRADLE_HOME=/home/buzz/program/gradle
 export GRADLE_HOME
 JUNIT_HOME=/home/buzz/program/junit
@@ -11,7 +13,7 @@ GRIFFON_HOME=/home/buzz/program/griffon
 export GRIFFON_HOME
 GRAILS_HOME=/home/buzz/program/grails
 export GRAILS_HOME
-PATH=$PATH:$HOME/bin:$JAVA_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin:$JUNIT_HOME/bin:$GRIFFON_HOME/bin:$GRAILS_HOME/bin
+PATH=$PATH:$HOME/bin:$JAVA_HOME/bin:$MAVEN_HOME/bin:$GROOVY_HOME/bin:$GRADLE_HOME/bin:$JUNIT_HOME/bin:$GRIFFON_HOME/bin:$GRAILS_HOME/bin
 export PATH
 
 
