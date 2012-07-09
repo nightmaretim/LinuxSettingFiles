@@ -1,0 +1,12 @@
+b #T35*500 br();
+br #T35*500 br();
+mkp #T35*500 mkp.yield('');
+pr #T35*500 pre{mkp.yield('');};
+td #T35*500 td('');
+てーぶる #T35*500 tr{ td(''); }
+ぱら #T35*500 <para role="original">
+ふぉか #T35*500 font(color:'#000000','');
+ふれーず #T35*500 <phrase role="original">
+ぶろぐ #T35*500 http://d.hatena.ne.jp/nightmare_tim/
+りすと #T35*500 li{mkp.yield('');};
+りんく #T35*500 a(href:'','');

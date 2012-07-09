@@ -54,6 +54,14 @@
 :if has("autocmd")
 :  autocmd Filetype java setlocal omnifunc=javacomplete#Complete
 :endif
+"JavaCompleteをGroovyでも有効にする
+:if has("autocmd")
+:  autocmd Filetype groovy setlocal omnifunc=javacomplete#Complete
+:endif
+"JavaCompleteをGradleでも有効にする
+:if has("autocmd")
+:  autocmd Filetype gradle setlocal omnifunc=javacomplete#Complete
+:endif
 "Set 'completefunc' option to show parameters information IF YOU LIKE. e.g.
 :setlocal completefunc=javacomplete#CompleteParamsInfo
 "You can map as follows for better display:
